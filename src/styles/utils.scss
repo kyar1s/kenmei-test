@@ -1,0 +1,41 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+.align-center {
+  @include align-center;
+}
+
+@each $name, $size in $spacing {
+  //Padding
+  .p-#{$name} {
+    padding: $size;
+  }
+  .pt-#{$name} {
+    padding-top: $size;
+  }
+  .pl-#{$name} {
+    padding-left: $size;
+  }
+  .pb-#{$name} {
+    padding-bottom: $size;
+  }
+  .pr-#{$name} {
+    padding-right: $size;
+  }
+  //Padding
+  .m-#{$name} {
+    margin: $size;
+  }
+  .mt-#{$name} {
+    margin-top: $size;
+  }
+  .ml-#{$name} {
+    margin-left: $size;
+  }
+  .mb-#{$name} {
+    margin-bottom: $size;
+  }
+  .mr-#{$name} {
+    margin-right: $size;
+  }
+}
