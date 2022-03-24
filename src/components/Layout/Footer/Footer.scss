@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+@import "../../../styles/mixins.scss";
+
+.footer {
+  width: 100%;
+  min-height: 2rem;
+  background-color: $brand-color;
+  padding: 1rem;
+  .content {
+    @include align-center;
+    max-width: $max-width;
+    color: $white;
+    margin: 0 auto;
+    &--name {
+      font-weight: bold;
+      margin-left: 0.5rem;
+    }
+  }
+}
