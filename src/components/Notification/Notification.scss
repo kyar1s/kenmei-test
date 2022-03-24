@@ -1,0 +1,9 @@
+@import '../../styles/variables.scss';
+
+.notification {
+  position: absolute;
+  background-color: $white;
+  border-radius: 0.5rem;
+  right: 2rem;
+  bottom: -5rem;
+}
